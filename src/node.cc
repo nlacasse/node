@@ -2597,6 +2597,7 @@ static Handle<Value> DebugProcess(const Arguments& args) {
 
 static Handle<Value> DebugPause(const Arguments& args) {
   v8::Debug::DebugBreak(node_isolate);
+  return Undefined();
 }
 
 
